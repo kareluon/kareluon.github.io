@@ -1,0 +1,140 @@
+@charset "utf-8";
+/*手机端样式*/
+* { margin: 0; outline: 0; padding: 0; /*font-size: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */}
+#wrap {display:block;min-width: 320px; margin:0 auto; max-width:640px; width: 100%;overflow: hidden;-webkit-box-sizing: border-box; -moz-box-sizing:border-box; background:#ededed; }
+.banner img{display:block; with:100%;}
+.f_l{float:left;}
+.f_r{float:right;}
+.telnav01{display:block; width:50%;float: left;background:#01adef;}
+.banner {display: block; position: relative; z-index: 999; width: 100%;}
+.telnav02{display:block; width:50%;float: left;background:#01adef;}
+.telnav03{display:inline-block; width:50%;float: left;background:#01adef;}
+.telnav04{display:inline-block; width:50%;float: left;background:#01adef;}
+.telnav05{display:inline-block; width:100%;float: left;background:#01adef;}
+.telnav01 .telbtn{float:left;display:inline-block; width:100%;}
+.telnav01 .telbtn span, .telnav02 .telbtn span{display:inline-block; width:62%;color:#fff; font-size:16px; text-align:center; padding:15% 0;}
+
+.telnav02 .telbtn, .telnav03 .telbtn,.telnav04 .telbtn{float:left;display:block; width:100%;}
+.telnav03 .telbtn span{display:inline-block; width:100%;color:#fff; font-size:16px; text-align:center; padding:58% 0 22%;}
+.telnav04 .telbtn span{display:inline-block; width:100%;color:#fff; font-size:16px; text-align:center; padding:58% 0 22%;}
+
+.telnav05 .telbtn{float:left;display:block; width:100%;}
+.telnav05 .telbtn span{display:inline-block; width:76%;color:#fff; font-size:16px; text-align:center; padding:7.5% 0;}
+
+.c01{background:no-repeat 80% center; background-size:20% auto;}
+.c02{background:no-repeat 80% center; background-size:20% auto;}
+.c03{background:no-repeat 50% 40%; background-size:25% auto;}
+.c04{background:no-repeat 50% 40%; background-size:25% auto;}
+
+footer {background-color:#333;height:28px;line-height:28px;display:block; width:100%; color:#FFF; font-size:1.4em; text-align:center;}
+
+@media screen and (min-width: 320px){ 
+.telnav01,.telnav02 {max-height: 65px}
+}
+
+@media screen and (min-width: 350px){ 
+#wrap{min-width:350px;}
+.telnav03 .telbtn span{padding:50% 0 21%;}
+.telnav01,.telnav02 {max-height: 70px}
+}
+
+@media screen and (min-width: 360px){ 
+#wrap{min-width:360px;}
+.telnav03 .telbtn span{padding:50% 0 21%;}
+.telnav01,.telnav02 {max-height: 70px}
+}
+
+@media screen and (min-width: 480px){ 
+#wrap{min-width:480px;}
+.telnav03 .telbtn span{padding:50% 0 18%;}
+.telnav01,.telnav02 {max-height: 70px}
+}
+
+@media screen and (min-width: 540px){ 
+#wrap{min-width:540px;}
+.telnav03 .telbtn span{padding:50% 0 16.5%;}
+.telnav01,.telnav02 {max-height: 70px}
+}
+
+@media screen and (min-width: 600px){ 
+#wrap{min-width:600px;}
+.telnav03 .telbtn span{padding:50% 0 16.5%;}
+.telnav01,.telnav02 {max-height: 70px}
+}
+
+@media screen and (min-width: 640px){ 
+#wrap{min-width:640px;}
+.telnav03 .telbtn span{padding:50% 0 16%;}
+.telnav01,.telnav02 {max-height: 100px}
+}
+
+
+
+
+
+@media screen and (min-width: 350px){ 
+#wrap{min-width:350px;}
+.telnav04 .telbtn span{padding:50% 0 21%;}
+}
+
+@media screen and (min-width: 360px){ 
+#wrap{min-width:360px;}
+.telnav04 .telbtn span{padding:50% 0 21%;}
+}
+
+@media screen and (min-width: 480px){ 
+#wrap{min-width:480px;}
+.telnav04 .telbtn span{padding:50% 0 18%;}
+}
+
+@media screen and (min-width: 540px){ 
+#wrap{min-width:540px;}
+.telnav04 .telbtn span{padding:50% 0 16.5%;}
+}
+
+@media screen and (min-width: 600px){ 
+#wrap{min-width:600px;}
+.telnav04 .telbtn span{padding:50% 0 16.5%;}
+}
+
+@media screen and (min-width: 640px){ 
+#wrap{min-width:640px;}
+.telnav04 .telbtn span{padding:50% 0 16%;}
+}
+
+/*从右往左*/
+/*.animation1 .mod_menu{-webkit-animation: animation1 1s;}
+@-webkit-keyframes animation1
+{
+0%   {margin-left:0%;}
+100% {margin-left:0%;}
+}*/
+/*从左往右*/
+/*.animation2 .mod_menu{-webkit-animation: animation2 1s;}
+@-webkit-keyframes animation2
+{
+0%   {margin-left:0%;}
+100% {margin-left:0%;}
+}*/
+/*渐显*/
+/*.animation3{ opacity:1;-webkit-animation: animation3_1 1s;}
+.animation3 .mod_menu{opacity:1;-webkit-animation: animation3_2 1.8s;}
+@-webkit-keyframes animation3_1
+{
+0%   {opacity:0;}
+100% {opacity:1;}
+}
+@-webkit-keyframes animation3_2
+{
+0%   {opacity:0;}
+50%   {opacity:0;}
+100% {opacity:1;}
+}*/
+
+/*翻转*/
+/*.animation4 .mod_menu{-webkit-animation: animation4 0.8s;}
+@-webkit-keyframes animation4
+{
+0%{-webkit-transform:rotateY(0deg);}
+100%{-webkit-transform:rotateY(360deg);}
+}*/

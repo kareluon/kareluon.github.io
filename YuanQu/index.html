@@ -1,0 +1,297 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+
+<!-- 移动设备支持 -->
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta name="apple-mobile-web-app-capable" content="yes"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<link href="css/mod43.css" rel="stylesheet" type="text/css"><!--首页内容样式-->
+<link href="css/style.css" rel="stylesheet" type="text/css"><!--导航栏样式-->
+<link href="css/mod39.css" rel="stylesheet" type="text/css"><!--明星企业样式-->
+<!--<link href="css/reset.css" rel="stylesheet" type="text/css">-->
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<style>
+.box_swipe{
+    overflow:hidden;
+    position:relative;
+}
+.box_swipe ul{
+    -webkit-padding-start: 0px;
+}
+.box_swipe>ol{
+    height:20px;
+    position: relative;
+    z-index:10;
+    margin-top:-25px;
+    text-align:right;
+    padding-right:5px;
+}/* background-color:rgba(0,0,0,0.3); */
+.box_swipe>ol>li{
+    display:inline-block;
+    margin:5px 0px;
+    width:8px;
+    height:8px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 8px;
+}
+.box_swipe>ol>li.on{
+    background-color:#ffffff;
+}
+</style>
+<!--<script src="js/swipe2.js" type="text/javascript"></script>-->
+<script>
+$(function(){
+	$("#displayswipe").show();
+	$("#displayone").hide();
+	//var banner=Array;//banner列表记录
+	/*
+	var winwidth2= $("#windowwidth").val();
+	var bili=$("#bili").val();
+	bili=parseFloat(bili);
+   	var height2=bili*winwidth2+"px";
+   	var height2nopx=bili*winwidth2; 	
+   	$("#imageswzi").css("height",height2);
+   	$("#banner_box").css("height",height2);
+   	*/
+   	if(3==1){
+      	$("#displayswipe").hide();
+   		$("#displayone").show();
+   		//$("#onebannerimg").css("height",height2);
+   		//var banner0=Array;//一条banner记录
+   		//$("#onebannerimg").attr("src",banner0.images);
+    }
+new Swipe(document.getElementById('banner_box'), {
+		speed: 500,
+		auto: 3000,
+		callback: function(){
+			var lis = $(this.element).next("ol").children();
+			lis.removeClass("on").eq(this.index).addClass("on");
+		}
+	});
+});
+
+</script>
+</head>
+
+<body>
+    <div id="wrape">
+      
+      
+      <div class="nav">
+        <ul class="filter_tabs_ul">
+          <li class="bluebor"><a>园区概况</a></li>
+          <li><a>明星企业</a></li>
+          <li><a>入园指南</a></li>
+          <li><a class="nobdr">联系我们</a></li>
+        </ul>
+      </div>
+
+<ul class="filter_boxs"> <li class="tab_con">
+<div id="wrap" class="clr">
+<!--<div class="telphone"><img src="../images/tel.png"></div>-->
+<div class="banner">
+<div style="width:100%;align:center;margin:0 auto;" id="imageswzi" >
+<div id="displayswipe" style="-webkit-transform:translate3d(0,0,0);" style="display:none;">
+<div style="visibility: visible;" id="banner_box" class="box_swipe">
+<ul style="list-style: none outside none; width: 4480px; transition-duration: 500ms; transform: translate3d(-1920px, 0px, 0px);">
+<li style="width: 640px; display: table-cell; vertical-align: top;"><img src="images/1.jpg"   id="bannerimg9982" style="width:100%;"></li>
+<li style="width: 640px; display: table-cell; vertical-align: top;"><img src="images/2.jpg"   id="bannerimg9983" style="width:100%;"></li>
+<li style="width: 640px; display: table-cell; vertical-align: top;"><img src="images/3.jpg"   id="bannerimg9984" style="width:100%;"></li>
+</ul>
+		<ol><li class=""></li>&nbsp;
+        <li class=""></li>&nbsp;
+        <li class=""></li>&nbsp;
+        </ol>
+	  </div>
+	</div>
+    </div>
+</div>
+
+    <div class="mod_menu clr">
+  			<div class="telnav01" style='background-color:#ffb359'>
+	    	                                    <a href="common.html">
+<div class="telbtn c01" style="background-image:url(images/guihua.png)"><span class="f_l">园区规划</span></div>
+	    	</a>
+	  	</div>
+  			<div class="telnav02" style='background-color:#7ecef4'>
+	    	                        <a href="common.html">
+<div class="telbtn c02" style="background-image:url(images/peitao.png)"><span class="f_l">园区配套</span></div>
+	    	</a>
+	  	</div>
+  			<div class="telnav03" style='background-color:#52c7a4'>
+	    	                                    <a href="tag.html">
+<div class="telbtn c03" style="background-image:url(images/biaoqian.png)"><span class="f_l">园区标签</span></div>
+	    	</a>
+	  	</div>
+  			<div class="telnav04" style='background-color:#36a6cf'>
+	    	                                    <a href="#">
+<div class="telbtn c04" style="background-image:url(images/shipin.png)"><span class="f_l">园区视频</span></div>
+	    	</a>
+	  	</div>
+         </div>
+</div><!--wrap结束-->
+</li>
+
+<li class="tab_con">
+<div class="mod_main">
+  <div class="starbanner">
+             <img src="images/1.jpg" alt="" style="width:100%;">
+             <i><img src="images/mask.png"></i>
+  </div>
+
+  <div class="starmod_menu">
+     <a href="#"  class="color">
+         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="no-mt">
+              <tr>
+                <td width="40%" align="right"><a style='color:#36a6cf;'>珠海经济特区远东财务电脑信息服务有限公司</a></td>
+                <td width="20%" align="center"><img src="images/mid-left.png"></td>
+                <td width="40%">
+                <div class="pic mt ml-5"><img src="images/LOGO1.jpg" /></div>
+                </td>
+              </tr>
+            </table>
+       </a>
+   <a href="#"  class="color">
+         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="no-mt1">
+           <tr><td width="40%" align="right"> <div class="pic mb mr-5"> 
+           <img src="images/LOGO2.jpg" /></div></td>
+              <td width="20%" align="center"><img src="images/mid-right.png"></td>
+              <td width="40%"><a style='color:#36a6cf;'>珠海电脑信息服务有限公司济济济济特公司</a></td>
+          </tr>
+        </table>
+       </a>
+       
+        <a href="#"  class="color">
+         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="no-mt">
+              <tr>
+                <td width="40%" align="right"><a style='color:#36a6cf;'>珠海经济特区远东财务电脑信息服务有限公司</a></td>
+                <td width="20%" align="center"><img src="images/mid-left.png"></td>
+                <td width="40%">
+                <div class="pic mt ml-5"><img src="images/LOGO1.jpg" /></div>
+                </td>
+              </tr>
+            </table>
+       </a>
+   <a href="#"  class="color">
+         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="no-mt1">
+           <tr><td width="40%" align="right"> <div class="pic mb mr-5"> 
+           <img src="images/LOGO2.jpg" /></div></td>
+              <td width="20%" align="center"><img src="images/mid-right.png"></td>
+              <td width="40%"><a style='color:#36a6cf;'>珠海电脑信息服务有限公司济济济济特公司</a></td>
+          </tr>
+        </table>
+       </a>
+ </div><!--mod_menu结束-->
+</div></li>
+
+
+<li class="tab_con"> 
+<div class="starbanner">
+   <img src="images/1.jpg" alt="" style="width:100%;">
+   <i><img src="images/mask.png"></i>
+</div>
+<div class="tab_step">
+<div class="tab_hedstep"><span>1</span>接待咨询</div>
+<div class="tab_contstep">电子商务产业园以电子商务电子商务产业园以电子商务企对象。企业、电商配套资源供应商及综合配套服务企业为主要招商对象。</div>
+<div class="tab_hedstep"><span>2</span>现场选铺</div>
+<div class="tab_contstep">电子商务产业园以电子商务电子商务产业园以电子商务企主要招商对象。企业、电商配套资源供应商及综合配套服务企业为主要招商对象。</div>
+<div class="tab_hedstep"><span>3</span>签订协议</div>
+<div class="tab_contstep">电子商务产业园以电子商务电子商务产业园以电子商务企务企业为主要招商对象。企业、电商配套资源供应商及综合配套服务企业为主要招商对象。</div>
+<div class="tab_hedstep"><span>4</span>装修报批</div>
+<div class="tab_contstep">电子商务产业园以电子商务电子商务产业园以电子商务企务企业为主要招商对象。企业、电商配套资源供应商及综合配套服务企业为主要招商对象。</div>
+</div>
+</li>
+  
+  
+  
+<li class="tab_con tab_con_bom">
+<div class="mod_main">
+
+  <div class="starbanner">
+             <img src="images/1.jpg" alt="" style="width:100%;">
+             <i><img src="images/mask.png"></i>
+  </div>
+
+<div class="nameYuan">珠海市清华科技园</div>
+<div class="divid"></div>
+<div><ul><li class="blueTo">电话</li><li>0756-6866800</li></ul><a href="#" class="btn Pho"></a></div>
+<div class="divid"></div>
+<div><ul><li class="blueTo">邮箱</li><li>fe_service@flyrise.cn</li></ul><a href="#" class="btn Youxiang"></a></div> 
+<div class="divid"></div>
+<div><ul><li class="blueTo">传真</li><li>0756-6866900</li></ul></div>
+<div class="divid"></div>
+<div><ul><li class="blueTo">地址</li><li>广东省珠海市软件园路1号南方软件园</li></ul></div>
+<div class="divid"></div>
+</div></li>
+</ul>
+      <!--幻灯片开始-->  
+          <!--<div class="box">
+              <div id="banner_box" class="box_swipe">
+                <ul>
+                  <li><a onClick="return false;"><img src="images/banner01.jpg"></a></li>
+                  <li><a onClick="return false;"><img src="http://new.dodoca.com/www/images/mod/custom/xiangyu/banner06.jpg"></a></li>
+                  <li><a onClick="return false;"><img src="http://new.dodoca.com/www/images/mod/custom/xiangyu/banner02.jpg"></a></li>
+                  <li><a onClick="return false;"><img src="http://new.dodoca.com/www/images/mod/custom/xiangyu/banner07.jpg"></a></li>
+                  <li><a onClick="return false;"><img src="http://new.dodoca.com/www/images/mod/custom/xiangyu/banner04.jpg"></a></li>
+                  <li><a onClick="return false;"><img src="http://new.dodoca.com/www/images/mod/custom/xiangyu/banner05.jpg"></a></li>
+                  <li><a onClick="return false;"><img src="http://new.dodoca.com/www/images/mod/custom/xiangyu/banner08.jpg"></a></li>
+                  <li><a onClick="return false;"><img src="http://new.dodoca.com/www/images/mod/custom/xiangyu/banner03.jpg"></a></li>
+                </ul>
+                <ol style="text-align:center">
+                  <li class="on"></li>
+                  <li class=""></li>
+                  <li class=""></li>
+                  <li class=""></li>
+                  <li class=""></li>
+                  <li class=""></li>
+                  <li class=""></li>
+                  <li class=""></li>        
+                </ol>
+                <div class="logo"><img src="http://new.dodoca.com/www/images/mod/custom/xiangyu/logo.png"></div>
+              </div>  
+            <script>
+              $(function(){
+                new Swipe(document.getElementById('banner_box'), {
+                  speed:500,
+                  auto:3000,
+                  callback: function(){
+                    var lis = $(this.element).next("ol").children();
+                    lis.removeClass("on").eq(this.index).addClass("on");
+                  }
+                });
+              });
+            </script> 
+        </div>-->     
+
+    </div>
+<a href="#"><div class="telphone">入驻</div></a>
+    <!--<footer>点点客提供技术支持</footer>-->
+    <script type="text/javascript">
+// tab标签切换
+    jQuery.jqtab = function(tabtit,tab_conbox,shijian) {
+        $(tab_conbox).find(".tab_con").hide();
+        $(tabtit).find("li:first").addClass("bluebor").show();
+        $(tab_conbox).find(".tab_con:first").show();
+
+        $(tabtit).find("li").bind(shijian,function(){
+          $(this).addClass("bluebor").siblings("li").removeClass("bluebor");
+            var activeindex = $(tabtit).find("li").index(this);
+            $(tab_conbox).children().eq(activeindex).show().siblings().hide();
+           return false;
+        });
+    };
+// tab标签切换
+    $.jqtab(".filter_tabs_ul",".filter_boxs","mousedown");
+</script>
+</body>
+</html>
