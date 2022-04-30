@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+<title>粤康码</title>
+<style>
+body {
+	font-family: "微软雅黑", "黑体";
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: 1px;
+	background-color: #4393f3;
+	background-image: url(img/jiantouGIF.gif);
+	background-repeat: no-repeat;
+	background-position: center top;	
+	background-size:420px auto;
+	
+}
+ul,h1,h2,h3,p{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.toubu2ge {
+	width: 360px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 25px;
+}
+.toubu2ge2 {
+	background-image: url(img/zhutu.png);
+	background-size: 360px auto;
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 400px;
+	width: 360px;
+	text-align: center;
+	padding-top: 60px;
+}
+.toubu2ge1 {
+	font-size: 20px;
+	color: #FFF;
+	text-align: center;
+	height: 40px;
+}
+.toubu2ge3 {
+	background-image: url(img/24HOUR.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 360px auto;
+	height: 150px;
+	width: 360px;
+	margin-top: 5px;
+}
+.anniuZuo {
+	font-size: 13px;
+	color: #FFF;
+	text-align: center;
+	float: left;
+	height: 20px;
+	width: 175px;
+	padding-top: 95px;
+}
+.jiluClass {
+	width: 360px;
+	margin-left: -180px;
+	text-align: center;
+	left: 50%;
+	background-image: url(img/hesuanJILU.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	font-size: 15px;
+	color: #666;
+	height: 1000px;
+	background-size: 360px;
+	background-color: #FFF;
+}
+.jiluClass2 {
+	text-align: center;
+	font-size: 15px;
+	color: #666;
+	height: 1000px;
+	width: 100%;
+}
+.jilu2dibu {
+	background-image: url(img/xiabu.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 360px;
+	margin-right: auto;
+	margin-left: auto;
+	background-size: 360px;
+	height: 1006px;
+}
+.jiluRIQI {
+	position: absolute;
+	top: 218px;
+	right: 0px;
+}
+.jiluRIQI2 {
+	position: absolute;
+	top: 533px;
+	right: 0px;
+}
+.fanhuianjian {
+	height: 60px;
+	width: 60px;
+	background-image: url(img/zuobFanhui.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size:auto 20px;
+}
+.jiankangXixi {
+	height: 50px;
+	width: 160px;
+	position: absolute;
+	left: 45px;
+	top: 430px;
+}
+</style>
+<!-- Mobile Devices Support @begin -->
+<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta name="apple-mobile-web-app-capable" content="yes" /> <!-- apple devices fullscreen -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<!-- Mobile Devices Support @end -->
+</head>
+
+<body>
+<div class="toubu2ge">
+    <div class="toubu2ge1"><img src="img/youjiaoGUANBI.png" width="360px"></div>
+      <div class="toubu2ge2">
+         <div style="font-size:30px; font-weight:800;"><span class="monther"></span>-<span class="dater"></span> <span class="hourer"></span>:<span class="minerter"></span>:<span class="sier"></span></div>
+        <div class="jiankangXixi"></div>
+  </div> 
+  <div class="toubu2ge3"><div class="anniuZuo"><span class="yearer"></span>-<span class="monther"></span>-<span class="dater"></span> 00:05</div><div class="anniuZuo" style="float:right; color:#999999">2021-12-30</div></div> 
+</div>
+
+
+<div class="2toubuge">
+  <div style="font-size:18px; color:#FFF; text-align:center;margin-bottom:30px;">  
+    依托全国一体化政务服务平台<br>
+    实现跨省（区、市）数据共享和互通互认
+    </div>
+    <img src="img/shouyeDIBU.png" width="100%"> 
+</div>
+
+
+<div  id="jilu" style="position:absolute;top:2000px;display:none" class="jiluClass">
+   <div class="fanhuianjian"></div>
+  <div class="jiluRIQI">
+    <div style="margin-bottom:25px;"><span class="yearer"></span>-<span class="monther"></span>-<span class="dater2"></span> 17:51</div>
+    <div><span class="yearer"></span>-<span class="monther"></span>-<span class="dater"></span> 00:05</div>
+   </div> 
+  <div class="jiluRIQI2">
+    <div style="margin-bottom:25px;">2022-4-28 14:35</div>
+    <div>2022-4-29 05:12</div>
+   </div> 
+</div>
+
+<div id="jilu2" style="position:absolute;top:2000px;display:none" class="jiluClass2">
+<div class="fanhuianjian" style="position:absolute;left:30px;"></div>
+<img src="img/toubu.png" width="100%" > 
+    <div class="jilu2dibu">
+          <div class="jiluRIQI" style="top:257px;right:46px">
+               <div style="margin-bottom:25px;"><span class="yearer"></span>-<span class="monther"></span>-<span class="dater2"></span> 17:51</div>
+               <div><span class="yearer"></span>-<span class="monther"></span>-<span class="dater"></span> 00:05</div>
+          </div> 
+           <div class="jiluRIQI" style="top:554px;right:46px">
+               <div><span class="yearer"></span>-<span class="monther"></span>-<span class="dater"></span></div>
+          </div> 
+    </div>
+</div>
+
+</body>
+	
+	<script type="text/javascript">
+        function getNow(Mytime) { return Mytime < 10 ? '0' + Mytime : Mytime; }
+        function CurrentTime() {
+            var myDate = new Date();
+            //获取当前年份
+            var year = myDate.getFullYear();
+            //获取当前月份
+            var month = myDate.getMonth() + 1;
+            //获取当前日期
+            var date = myDate.getDate();
+            //获取当前小时数(0-23)
+            var h = myDate.getHours();
+            //获取当前分钟数(0-59)
+            var m = myDate.getMinutes();
+            var s = myDate.getSeconds();
+            var Now = year + '-' + getNow(month) + "-" + getNow(date) + " " + getNow(h) + ':' + getNow(m) + ":" + getNow(s);
+			var month0=getNow(month);
+			var date0=getNow(date);
+			var h0=getNow(h);
+			var m0=getNow(m);
+			var s0=getNow(s);
+	  $('.yearer').text(year);
+      $('.monther').text(month0);
+	  $('.dater').text(date0);
+	  $('.dater2').text(date0-1);
+	  $('.hourer').text(h0);
+	  $('.minerter').text(m0);
+	  $('.sier').text(s0);
+        }
+        //间隔一秒执行一次获取当前时间的方法
+        setInterval(function () { CurrentTime() }, 1000);
+		
+		//点击出现记录页面
+		$('.anniuZuo').click(function(){
+			$('#jilu').css({"display":"block"});
+			$('body').css({"background":"white"});
+		   $('#jilu').animate({top:'0px',});
+		   $('.2toubuge').css({"display":"none"});
+		  });
+		  
+		 //点击返回主页面 
+		 $('.fanhuianjian').click(function(){
+			 $('#jilu').css({"display":"none"});
+			 $('#jilu').animate({top:'2000px',});
+			 $('body').css({"background":"#4393f3"});
+			  $('body').css({"background-image":"url(img/jiantouGIF.gif)"});
+			  $('.2toubuge').css({"display":"block"});
+			  $('#jilu2').animate({top:'2000px',});
+			   $('#jilu2').css({"display":"none"});
+			    $('.toubu2ge').css({"display":"block"});
+			 });
+			 
+		 //点击健康信息页面 
+		 $('.jiankangXixi').click(function(){
+			 $('.toubu2ge').css({"display":"none"});
+			$('.2toubuge').css({"display":"none"});
+			$('#jilu2').css({"display":"block"});
+			$('#jilu2').animate({top:'0px',});
+			 $('body').css({"background":"#f3f4f7"});
+			 });	 
+    </script>
+
+</html>
