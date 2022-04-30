@@ -15,6 +15,29 @@ img{
 	}
 
 </style>
+<script type="text/javascript">
+
+    //禁用鼠标右键
+
+    document.oncontextmenu = function () { return false; };
+
+    //禁用复制快捷键ctrl+C
+
+    document.onkeydown = function () {
+
+        if ((window.event && window.event.keyCode == 123) || ((event.ctrlKey) || (window.event.keycode == 67))) {
+
+            event.keyCode = 0;
+
+            event.returnValue = false;
+
+            return false;
+
+        }
+
+    };
+
+</script>
 </head>
 
 <body>
